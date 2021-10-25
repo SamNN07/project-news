@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.header {
+  color: #fff;
+  text-align: center;
+  background-color: #060042;
+  width: 100vw;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.header h2 {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.test {
+  margin: auto;
+  width: 50%;
+  height: auto;
+  text-align: center;
+  vertical-align: middle;
+  border: black solid;
+  margin-bottom: 2rem;
+}
