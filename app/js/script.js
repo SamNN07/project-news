@@ -43,4 +43,22 @@ async function getNews() {
     document.getElementById("cardimg8").src = data.articles[7].urlToImage;
     document.getElementById("readmore8").href = data.articles[7].url;
 }
+
+async function getWeather(){
+    const weatherURL = "https://api.openweathermap.org/data/2.5/weather?q=Pune&units=metric&appid=0e1d2de76fdc3ee3edf14bdfc9d5fa29";
+    const weatherReponse  = await fetch(weatherURL);
+    const weatherData = await weatherReponse.json();
+
+    document.getElementById("city").textContent = weatherData.name+", India";
+    document.getElementById("temp").textContent = Math.trunc(weatherData.main.temp) +"°C";
+    document.getElementById("feel").innerHTML = "Feels Like: " +"<strong>"+Math.trunc(weatherData.main.feels_like)+"°C"+"</strong>";
+    document.getElementById("mainw").textContent = weatherData.weather[0].main;
+
+    document.getElementById("humid").textContent = "Humidity: "+ weatherData.main.humidity+"%";
+    document.getElementById("pressure").textContent = "Pressure: "+ weatherData.main.pressure+"hPa";
+    
+    
+}
+
 getNews();
+getWeather();
