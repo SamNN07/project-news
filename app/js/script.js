@@ -1,7 +1,7 @@
 async function getNews() {
     const url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=9406be52f3f9495e9aae60ff2b584c40";
-    const reponse  = await fetch(url);
-    const data = await reponse.json();
+    const response  = await fetch(url);
+    const data = await response.json();
 
     document.getElementById("headline1").textContent = data.articles[0].title;
     document.getElementById("content1").textContent = data.articles[0].description;
@@ -23,31 +23,51 @@ async function getNews() {
     document.getElementById("cardimg4").src = data.articles[3].urlToImage;
     document.getElementById("readmore4").href = data.articles[3].url;
 
-    document.getElementById("headline5").textContent = data.articles[4].title;
-    document.getElementById("content5").textContent = data.articles[4].description;
-    document.getElementById("cardimg5").src = data.articles[4].urlToImage;
-    document.getElementById("readmore5").href = data.articles[4].url;
+}
 
-    document.getElementById("headline6").textContent = data.articles[5].title;
-    document.getElementById("content6").textContent = data.articles[5].description;
-    document.getElementById("cardimg6").src = data.articles[5].urlToImage;
-    document.getElementById("readmore6").href = data.articles[5].url;
+async function getSportsNews() {
 
-    document.getElementById("headline7").textContent = data.articles[6].title;
-    document.getElementById("content7").textContent = data.articles[6].description;
-    document.getElementById("cardimg7").src = data.articles[6].urlToImage;
-    document.getElementById("readmore7").href = data.articles[6].url;
+    const sportsUrl = "https://newsapi.org/v2/top-headlines?category=sports&language=en&apiKey=9406be52f3f9495e9aae60ff2b584c40";
+    const sportsResponse  = await fetch(sportsUrl);
+    const sportsData = await sportsResponse.json();
 
-    document.getElementById("headline8").textContent = data.articles[7].title;
-    document.getElementById("content8").textContent = data.articles[7].description;
-    document.getElementById("cardimg8").src = data.articles[7].urlToImage;
-    document.getElementById("readmore8").href = data.articles[7].url;
+    document.getElementById("headline5").textContent = sportsData.articles[0].title;
+    document.getElementById("content5").textContent = sportsData.articles[0].description;
+    document.getElementById("cardimg5").src = sportsData.articles[0].urlToImage;
+    document.getElementById("readmore5").href = sportsData.articles[0].url;
+
+    document.getElementById("headline6").textContent = sportsData.articles[1].title;
+    document.getElementById("content6").textContent = sportsData.articles[1].description;
+    document.getElementById("cardimg6").src = sportsData.articles[1].urlToImage;
+    document.getElementById("readmore6").href = sportsData.articles[1].url;
+
+}
+
+async function getInternationalNews(){
+    const url = "https://newsapi.org/v2/top-headlines?country=us&category=science&language=en&apiKey=9406be52f3f9495e9aae60ff2b584c40";
+    const response  = await fetch(url);
+    const data = await response.json();
+
+    const url2 = "https://newsapi.org/v2/top-headlines?country=au&category=science&language=en&apiKey=9406be52f3f9495e9aae60ff2b584c40";
+    const response2  = await fetch(url2);
+    const data2 = await response2.json();
+
+    document.getElementById("headline7").textContent = data.articles[0].title;
+    document.getElementById("content7").textContent = data.articles[0].description;
+    document.getElementById("cardimg7").src = data.articles[0].urlToImage;
+    document.getElementById("readmore7").href = data.articles[0].url;
+
+    document.getElementById("headline8").textContent = data2.articles[0].title;
+    document.getElementById("content8").textContent = data2.articles[0].description;
+    document.getElementById("cardimg8").src = data2.articles[0].urlToImage;
+    document.getElementById("readmore8").href = data2.articles[0].url;
+    
 }
 
 async function getWeather(){
     const weatherURL = "https://api.openweathermap.org/data/2.5/weather?q=Pune&units=metric&appid=0e1d2de76fdc3ee3edf14bdfc9d5fa29";
-    const weatherReponse  = await fetch(weatherURL);
-    const weatherData = await weatherReponse.json();
+    const weatherResponse  = await fetch(weatherURL);
+    const weatherData = await weatherResponse.json();
 
     document.getElementById("city").textContent = weatherData.name+", India";
     document.getElementById("temp").textContent = Math.trunc(weatherData.main.temp) +"°C";
@@ -61,4 +81,8 @@ async function getWeather(){
 }
 
 getNews();
+getSportsNews();
+getInternationalNews();
 getWeather();
+
+// const backupKey = "6ff0796049644e94b8e578a7666a8bf2";
