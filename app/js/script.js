@@ -41,6 +41,16 @@ async function getSportsNews() {
     document.getElementById("cardimg6").src = sportsData.articles[1].urlToImage;
     document.getElementById("readmore6").href = sportsData.articles[1].url;
 
+    document.getElementById("headline7").textContent = sportsData.articles[2].title;
+    document.getElementById("content7").textContent = sportsData.articles[2].description;
+    document.getElementById("cardimg7").src = sportsData.articles[2].urlToImage;
+    document.getElementById("readmore7").href = sportsData.articles[2].url;
+
+    document.getElementById("headline8").textContent = sportsData.articles[3].title;
+    document.getElementById("content8").textContent = sportsData.articles[3].description;
+    document.getElementById("cardimg8").src = sportsData.articles[3].urlToImage;
+    document.getElementById("readmore8").href = sportsData.articles[3].url;
+
 }
 
 async function getInternationalNews(){
@@ -52,15 +62,25 @@ async function getInternationalNews(){
     const response2  = await fetch(url2);
     const data2 = await response2.json();
 
-    document.getElementById("headline7").textContent = data.articles[0].title;
-    document.getElementById("content7").textContent = data.articles[0].description;
-    document.getElementById("cardimg7").src = data.articles[0].urlToImage;
-    document.getElementById("readmore7").href = data.articles[0].url;
+    document.getElementById("headline9").textContent = data.articles[0].title;
+    document.getElementById("content9").textContent = data.articles[0].description;
+    document.getElementById("cardimg9").src = data.articles[0].urlToImage;
+    document.getElementById("readmore9").href = data.articles[0].url;
 
-    document.getElementById("headline8").textContent = data2.articles[0].title;
-    document.getElementById("content8").textContent = data2.articles[0].description;
-    document.getElementById("cardimg8").src = data2.articles[0].urlToImage;
-    document.getElementById("readmore8").href = data2.articles[0].url;
+    document.getElementById("headline10").textContent = data2.articles[0].title;
+    document.getElementById("content10").textContent = data2.articles[0].description;
+    document.getElementById("cardimg10").src = data2.articles[0].urlToImage;
+    document.getElementById("readmore10").href = data2.articles[0].url;
+
+    document.getElementById("headline11").textContent = data.articles[1].title;
+    document.getElementById("content11").textContent = data.articles[1].description;
+    document.getElementById("cardimg11").src = data.articles[1].urlToImage;
+    document.getElementById("readmore11").href = data.articles[1].url;
+
+    document.getElementById("headline12").textContent = data2.articles[1].title;
+    document.getElementById("content12").textContent = data2.articles[1].description;
+    document.getElementById("cardimg12").src = data2.articles[1].urlToImage;
+    document.getElementById("readmore12").href = data2.articles[1].url;
     
 }
 

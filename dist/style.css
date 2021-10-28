@@ -6,10 +6,17 @@
 }
 
 body {
+  background-color: #fffdf9;
+  background-repeat: repeat-y;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.7;
+}
+
+.card-title {
+  font-family: "Open Sans", sans-serif;
+  overflow-y: hidden;
 }
 
 .card-img-top {
@@ -19,7 +26,8 @@ body {
 }
 
 .card-text {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
 }
 
 .bi-trash {
@@ -37,7 +45,14 @@ body {
 }
 
 .category-title {
-  font-weight: 300;
+  font-family: "BioRhyme", sans-serif;
+  text-decoration: underline 2.5px;
+  text-underline-offset: 3px;
+  height: auto;
+  overflow-y: hidden;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0d0d0d;
 }
 
 hr {
@@ -48,27 +63,37 @@ hr {
   margin-bottom: 2.5%;
 }
 
+.card {
+  background-color: #fff;
+  color: #0d0d0d;
+}
+
 .header {
   color: #fff;
-  text-align: center;
-  background-color: #060042;
+  text-align: left;
+  background-color: #0d0d0d;
+  font-family: "Cormorant", sans-serif;
   width: 100vw;
   height: auto;
   margin-bottom: 2rem;
 }
 
 .header h1 {
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  margin-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
 }
 
 .sidebarR {
-  margin-top: 0.5rem;
+  margin-top: 3.7rem;
   width: 17.2%;
   position: absolute;
   top: 1;
-  right: 0;
+  left: 0;
+  margin-left: 0.25rem;
   color: #ffffff;
+  padding-bottom: 2rem;
   height: auto;
   background-image: linear-gradient(120deg, #3c7da4, #559bd9, #5faad9, #94cef2, #f0f0f1);
   border-radius: 0.3rem;
@@ -114,7 +139,8 @@ hr {
 .footer-dark {
   padding: 50px 0;
   color: #f0f9ff;
-  background-color: #282d32;
+  background-color: #0d0d0d;
+  margin-top: 3rem;
 }
 
 .footer-dark h3 {
@@ -199,5 +225,9 @@ hr {
   opacity: 0.3;
   font-size: 13px;
   margin-bottom: 0;
+}
+
+.social-imgs {
+  padding-top: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
