@@ -1,14 +1,17 @@
 .header {
-    color: #fff;
-    text-align: center;
-    background-color: #060042;
+  color: #fff;
+  text-align: left;
+  background-color: #0d0d0d;
+  font-family: "Cormorant", sans-serif;
 
-    width: 100vw;
-    height: auto;
-    margin-bottom: 2rem;
+  width: 100vw;
+  height: auto;
+  margin-bottom: 2rem;
 
-    h1 {
-        padding-top: .5rem;
-        padding-bottom: .5rem;
-    }
+  h1 {
+    margin-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+  }
 }
