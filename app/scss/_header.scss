@@ -3,15 +3,43 @@
   text-align: left;
   background-color: #0d0d0d;
   font-family: "Cormorant", sans-serif;
-
+  display: flex;
+  flex-direction: row;
   width: 100vw;
   height: auto;
   margin-bottom: 2rem;
 
+
   h1 {
+    width: fit-content;
     margin-left: 2rem;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
     font-weight: 600;
+    flex-grow: 4;
   }
+}
+
+#nav {
+  
+  align-self: center;
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: "Roboto", sans-serif;
+
+
+  a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #fff;
+  }
+
+
+  
+
+
+  
 }

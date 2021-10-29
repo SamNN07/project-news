@@ -41,6 +41,11 @@
   <body>
     <header class="header">
       <h1 class="display-4"><i class="bi bi-newspaper"></i> News Insight</h1>
+      <div id="nav">
+        <a class="nav-btn" href="#National">National</a>
+        <a class="nav-btn" href="#Sports">Sports</a>
+        <a class="nav-btn" href="#International">International</a>
+      </div>
     </header>
 
     <div class="sidebarR">
@@ -61,7 +66,7 @@
     <article>
       <div class="container-fluid">
         <div class="row justify-content-center">
-          <h2 class="text-center category-title">National</h2>
+          <h2 id="National" class="text-center category-title">National</h2>
           <div class="col-8 col-lg-4 d-flex align-items-stretch">
             <div class="card border-1 shadow my-2">
               <img src="" class="card-img-top" id="cardimg1" alt="..." />
@@ -128,7 +133,7 @@
         </div>
         <hr />
 
-        <h2 class="text-center category-title">Sports</h2>
+        <h2 id="Sports" class="text-center category-title">Sports</h2>
         <div class="row justify-content-center">
           <div class="col-8 col-lg-4 d-flex align-items-stretch">
             <div class="card border-1 shadow my-2">
@@ -196,7 +201,7 @@
         </div>
         <hr />
 
-        <h2 class="text-center category-title">International</h2>
+        <h2 id="International" class="text-center category-title">International</h2>
         <div class="row justify-content-center">
           <div class="col-8 col-lg-4 d-flex align-items-stretch">
             <div class="card border-1 shadow my-2">
@@ -272,9 +277,9 @@
             <div class="col-sm-6 col-md-3 item">
               <h3>News feeds</h3>
               <ul>
-                <li><a href="#">National</a></li>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#">International</a></li>
+                <li><a href="#National">National</a></li>
+                <li><a href="#Sports">Sports</a></li>
+                <li><a href="#International">International</a></li>
               </ul>
             </div>
             <div class="col-sm-6 col-md-3 item">
