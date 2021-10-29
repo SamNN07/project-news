@@ -25,6 +25,36 @@ body {
   object-fit: cover;
 }
 
+@media only screen and (max-width: 1140px) {
+  .card-img-top {
+    height: 22vw;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .card-img-top {
+    height: 27vw;
+  }
+}
+
+@media only screen and (max-width: 706px) {
+  .card-img-top {
+    height: 30vw;
+  }
+}
+
+@media only screen and (max-width: 582px) {
+  .card-img-top {
+    height: 40vw;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .card-img-top {
+    height: 50vw;
+  }
+}
+
 .card-text {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
@@ -89,13 +119,26 @@ hr {
   flex-grow: 4;
 }
 
+@media only screen and (max-width: 410px) {
+  .header h1 {
+    font-size: 46px;
+  }
+}
+
+@media only screen and (max-width: 346px) {
+  .header h1 {
+    font-size: 40px;
+  }
+}
+
 #nav {
   align-self: center;
   flex-grow: 1;
   text-align: center;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  padding-right: 3rem;
   font-family: "Roboto", sans-serif;
 }
 
@@ -103,6 +146,20 @@ hr {
   font-size: 1.1rem;
   text-decoration: none;
   color: #fff;
+}
+
+#nav a:hover {
+  text-decoration: underline #fffdf9 1px;
+  text-underline-offset: 3px;
+}
+
+@media only screen and (max-width: 850px) {
+  #nav {
+    display: none;
+  }
+  h1 {
+    text-align: center;
+  }
 }
 
 .sidebarR {
@@ -185,7 +242,7 @@ hr {
 }
 
 .footer-dark ul a:hover {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 @media (max-width: 767px) {
@@ -250,3 +307,4 @@ hr {
 .social-imgs {
   padding-top: 1rem;
 }
+/*# sourceMappingURL=style.css.map */
