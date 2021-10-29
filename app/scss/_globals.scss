@@ -26,6 +26,26 @@ body {
   width: 100%;
   height: 17vw;
   object-fit: cover;
+
+  @media only screen and (max-width: 1140px) {
+    height: 22vw;
+  }
+
+  @media only screen and (max-width: 850px) {
+    height: 27vw;
+  }
+
+  @media only screen and (max-width: 706px) {
+    height: 30vw;
+  }
+
+  @media only screen and (max-width: 582px) {
+    height: 40vw;
+  }
+
+  @media only screen and (max-width: 470px) {
+    height: 50vw;
+  }
 }
 
 .card-text {

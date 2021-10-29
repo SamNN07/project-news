@@ -9,7 +9,6 @@
   height: auto;
   margin-bottom: 2rem;
 
-
   h1 {
     width: fit-content;
     margin-left: 2rem;
@@ -18,18 +17,29 @@
     font-weight: 600;
     flex-grow: 4;
   }
+
+  @media only screen and (max-width: 410px) {
+    h1 {
+      font-size: 46px;
+    }
+  }
+
+  @media only screen and (max-width: 346px) {
+    h1 {
+      font-size: 40px;
+    }
+  }
 }
 
 #nav {
-  
   align-self: center;
   flex-grow: 1;
   text-align: center;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  padding-right: 3rem;
   font-family: "Roboto", sans-serif;
-
 
   a {
     font-size: 1.1rem;
@@ -37,9 +47,18 @@
     color: #fff;
   }
 
+  a:hover {
+    text-decoration: underline #fffdf9 1px;
+    text-underline-offset: 3px;
+  }
+}
 
-  
+@media only screen and (max-width: 850px) {
+  #nav {
+    display: none;
+  }
 
-
-  
+  h1 {
+    text-align: center;
+  }
 }
